@@ -1,5 +1,5 @@
 Before running: 
-a) create a security group in us-west-1 named: AllowSshHttpHttps
+a) create a security group in us-west-1 named: test
 b) make sure you have an ssh key from us-west-1 and you know where it is on your machine
 c) Install Python 3.9 or later
 d) Install boto3, the Python API for AWS, with pip3
