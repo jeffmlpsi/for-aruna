@@ -8,9 +8,9 @@ f) Make sure your AWS SSO user is active by running: aws configure sso.
 Make sure you name you AWS SSO profile iam-profile, since that is used in the code.
 
 To run: 
-a) run.sh:              python3 st34.py "AllowSshHttpHttps" TestKeyPair-US-West-1 ../../keypairs
+a) run.sh:              python3 st34.py "test" TestKeyPair-US-West-2 ./keypairs
 or
-b) run-and-delete.sh:   python3 st34.py "AllowSshHttpHttps" TestKeyPair-US-West-1 ../../keypairs -d
+b) run-and-delete.sh:   python3 st34.py "test" TestKeyPair-US-West-2 ./keypairs -d
 
 Change to keypair file name to match what is on your system. And, the path to the folder that contains the keypairs.
 
@@ -28,7 +28,7 @@ In Visual Studio Code you can create debug configuration in launch.json for your
             "request": "launch",
             "program": "st34.py",
             "console": "integratedTerminal",
-            "args": ["AllowSshHttpHttps", "TestKeyPair-US-West-1","../../keypairs"]
+            "args": ["test", "TestKeyPair-US-West-2","./keypairs"]
         },
         {
             "name": "st34.py delete on exit Python Debugger: Current File",
@@ -36,7 +36,7 @@ In Visual Studio Code you can create debug configuration in launch.json for your
             "request": "launch",
             "program": "st34.py",
             "console": "integratedTerminal",
-            "args": ["AllowSshHttpHttps", "TestKeyPair-US-West-1","../../keypairs","-d"]
+            "args": ["test", "TestKeyPair-US-West-2","./keypairs","-d"]
         }
     ]
 }
