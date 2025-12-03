@@ -85,7 +85,7 @@ def startinstance(ami_instance, securitygroupid, securitykey, keylocation, count
     keylocation = '...'
     count = number of instances
     """
-    instance_type = 't2.micro'
+    instance_type = 't3.micro'
     os.chdir(keylocation)  # require path for pem file
  
     region = 'us-west-1'
@@ -310,7 +310,8 @@ if  __name__ =='__main__':
       
     count = 1
     #'ami-07706bb32254a7fe5' Amazon Linux 2 AMI (HVM), SSD Volume Type, us-west-1   
-    ami_instance = 'ami-07706bb32254a7fe5'
+    # ami_instance = 'ami-07706bb32254a7fe5'
+    ami_instance = 'ami-03978d951b279ec0b'
     securitygroup = sys.argv[1]
     securitykey = sys.argv[2]
     keylocation = sys.argv[3]
